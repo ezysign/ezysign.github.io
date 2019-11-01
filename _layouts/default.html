@@ -1,3 +1,5 @@
+{% assign title = site.data.texts | where:"name","title_text" %}
+{% assign why_hassle = site.data.texts | where:"name","why_hassle" %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +10,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- meta tags -->
-  <meta name="title" content="Easysign bringing better signing experience">
-  <meta name="description"
-    content="Why hassle with paper contracts? Get a secure and reliable eSignature solution and digitally transform your business, with EzySign.">
-  <meta name="keywords" content="eSignature, secure signing, reliable signing, digital signature">
+  <meta name="title" content="{{ title.first.value }}">
+  <meta name="description" content="{{why_hassle.first.value}}"">
+  <meta name=" keywords" content="eSignature, secure signing, reliable signing, digital signature">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
@@ -20,7 +21,7 @@
   <!-- Meta tag ends -->
 
   <!--====== Title ======-->
-  <title>{{ site.data.texts[0].value }}</title>
+  <title>{{ page.title }}</title>
 
   <!--====== Favicon Icon ======-->
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
@@ -43,9 +44,9 @@
 
 <body>
   <!--====== HEADER PART START ======-->
-
+  {% include header.html %}
   {{ content }}
-
+  {% include footer.html %}
   <!--====== CONTACT PART ENDS ======-->
 
   <!--====== FOOTER PART START ======-->

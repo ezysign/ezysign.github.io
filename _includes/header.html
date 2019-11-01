@@ -1,7 +1,5 @@
----
-layout: default
----
-
+{% assign hero_title = site.data.texts | where:"name","hero_title" %}
+{% assign hero_subtitle = site.data.texts | where:"name","hero_sub_title" %}
 <header class="header-area">
   <div class="navgition navgition-transparent">
     <div class="container">
@@ -12,15 +10,8 @@ layout: default
               <img src="assets/images/logo.svg" alt="Logo" />
             </a>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarOne"
-              aria-controls="navbarOne"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne"
+              aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
               <span class="toggler-icon"></span>
               <span class="toggler-icon"></span>
               <span class="toggler-icon"></span>
@@ -68,29 +59,22 @@ layout: default
   </div>
   <!-- navgition -->
 
-  <div
-    id="home"
-    class="header-hero bg_cover"
-    style="background-image: url(assets/images/header-bg.jpg)"
-  >
+  <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header-bg.jpg)">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8 col-lg-10">
           <div class="header-content text-center">
             <h3 class="header-title">
-              {{ site.data.texts[1].value }}
+              {{ hero_title.first.value }}
             </h3>
             <p class="text">
-              {{ site.data.texts[2].value }}
+              {{ hero_subtitle.first.value }}
             </p>
             <ul class="header-btn">
               <li><a class="main-btn btn-one" href="#">GET IN TOUCH</a></li>
               <li>
-                <a
-                  class="main-btn btn-two video-popup"
-                  href="https://www.youtube.com/watch?v=r44RKWyfcFw"
-                  >WATCH THE VIDEO <i class="lni-play"></i
-                ></a>
+                <a class="main-btn btn-two video-popup" href="https://www.youtube.com/watch?v=r44RKWyfcFw">WATCH THE
+                  VIDEO <i class="lni-play"></i></a>
               </li>
             </ul>
           </div>
@@ -106,4 +90,3 @@ layout: default
   </div>
   <!-- header content -->
 </header>
-{{ content }}
