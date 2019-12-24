@@ -1,81 +1,95 @@
-{% assign title = site.data.texts | where:"name","title_text" %}
-{% assign why_hassle = site.data.texts | where:"name","why_hassle" %}
+{% assign title = site.data.texts | where:"name","title_text" %} {% assign
+why_hassle = site.data.texts | where:"name","why_hassle" %}
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<head>
-  <!--====== Required meta tags ======-->
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- meta tags -->
+    <meta name="title" content="{{ title.first.value }}" />
+    <meta name="description" content="{{why_hassle.first.value}}"">
+    <meta
+      name=" keywords"
+      content="eSignature, secure signing, reliable signing, digital signature"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="1 days" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- meta tags -->
-  <meta name="title" content="{{ title.first.value }}">
-  <meta name="description" content="{{why_hassle.first.value}}"">
-  <meta name=" keywords" content="eSignature, secure signing, reliable signing, digital signature">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="1 days">
+    <!-- Meta tag ends -->
 
-  <!-- Meta tag ends -->
+    <!--====== Title ======-->
+    <title>{{ page.title }}</title>
 
-  <!--====== Title ======-->
-  <title>{{ page.title }}</title>
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/png"
+    />
 
-  <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-  <!--====== Bootstrap css ======-->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css" />
 
-  <!--====== Line Icons css ======-->
-  <link rel="stylesheet" href="assets/css/LineIcons.css" />
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 
-  <!--====== Magnific Popup css ======-->
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css" />
 
-  <!--====== Default css ======-->
-  <link rel="stylesheet" href="assets/css/default.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <!--====== Style css ======-->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  <body>
+    <!--====== HEADER PART START ======-->
+    {% include header.html %} {{ content }} {% include footer.html %}
+    <!--====== CONTACT PART ENDS ======-->
 
-<body>
-  <!--====== HEADER PART START ======-->
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-  <!--====== CONTACT PART ENDS ======-->
+    <!--====== FOOTER PART START ======-->
 
-  <!--====== FOOTER PART START ======-->
+    <!--====== FOOTER PART ENDS ======-->
 
-  <!--====== FOOTER PART ENDS ======-->
+    <!--====== BACK TO TOP PART START ======-->
 
-  <!--====== BACK TO TOP PART START ======-->
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
 
-  <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+    <!--====== BACK TO TOP PART ENDS ======-->
 
-  <!--====== BACK TO TOP PART ENDS ======-->
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
-  <!--====== jquery js ======-->
-  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
-  <!--====== Bootstrap js ======-->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
 
-  <!--====== Scrolling Nav js ======-->
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/scrolling-nav.js"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-  <!--====== Magnific Popup js ======-->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
 
-  <!--====== Main js ======-->
-  <script src="assets/js/main.js"></script>
-</body>
+    <!--UserLike ChatBot-->
 
+    <script
+      async
+      type="text/javascript"
+      src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/3a94fb6c390ccdc75f356255907e077e4a67734034a36087e6041abc76531552.js"
+    ></script>
+  </body>
 </html>
