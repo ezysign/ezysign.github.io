@@ -22,9 +22,9 @@
 /*===========================
     1. COMMON css 
 ===========================*/
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body {
-  font-family: 'lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #121212;
@@ -67,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #121212;
   margin: 0px;
@@ -304,7 +304,7 @@ p {
 .navgition .navbar .navbar-nav .nav-item a::before,
 .navgition .navbar .navbar-nav .nav-item a::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 8px;
   height: 4px;
   background-color: #0067f4;
@@ -401,7 +401,7 @@ p {
 }
 .header-hero::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -489,7 +489,7 @@ p {
 }
 .header-hero .header-content .header-btn li a.main-btn.btn-one::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -681,7 +681,7 @@ p {
 }
 .single-pricing .pricing-header .sub-title::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 72px;
   height: 4px;
   bottom: 0;
@@ -1057,31 +1057,17 @@ p.form-message.error {
   background-color: #f4f6f7;
 }
 
-.footer-widget {
+/*===== FOOTER FIVE =====*/
+.footer-five {
+  background-color: #f4f6f7;
   padding-top: 90px;
   padding-bottom: 120px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer-widget {
-    padding-top: 70px;
-    padding-bottom: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-widget {
-    padding-top: 50px;
-    padding-bottom: 80px;
-  }
-}
-
-.footer-logo-support .footer-logo .social {
-  margin-left: 35px;
-}
-.footer-logo-support .footer-logo .social li {
+.footer-five .social li {
   display: inline-block;
-  margin-right: 10px;
+  margin: 0 5px;
 }
-.footer-logo-support .footer-logo .social li a {
+.footer-five .social li a {
   font-size: 24px;
   color: #6c6c6c;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1090,118 +1076,80 @@ p.form-message.error {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.footer-logo-support .footer-logo .social li a:hover {
+.footer-five .social li a:hover {
   color: #0067f4;
 }
-
-.footer-logo-support .footer-support span {
-  font-size: 20px;
-  line-height: 25px;
-  color: #6c6c6c;
-  font-weight: 600;
+.footer-five .footer-support {
+  padding-top: 21px;
 }
-@media (max-width: 767px) {
-  .footer-logo-support .footer-support span {
-    display: block;
-  }
-}
-.footer-logo-support .footer-support span.mail {
-  margin-left: 32px;
-}
-@media (max-width: 767px) {
-  .footer-logo-support .footer-support span.mail {
-    margin-left: 0;
-  }
-}
-
-.footer-title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 18px;
-  color: #6c6c6c;
-}
-
-.footer-link {
-  margin-top: 32px;
-}
-.footer-link ul {
-  margin-top: 8px;
-}
-.footer-link ul li a {
+.footer-five .footer-support span {
   font-size: 16px;
   line-height: 24px;
   color: #121212;
-  margin-top: 16px;
-  font-weight: 500;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+  font-weight: 600;
+  margin-top: 9px;
+  display: block;
 }
-.footer-link ul li a:hover {
-  color: #0067f4;
+@media (max-width: 767px) {
+  .footer-five .footer-support span {
+    display: block;
+  }
 }
-
-.footer-newsletter {
-  margin-top: 32px;
+.footer-five .footer-app-store {
+  padding-top: 27px;
 }
-.footer-newsletter .newsletter {
-  margin-top: 24px;
-  position: relative;
+.footer-five .footer-app-store ul li {
+  display: inline-block;
+  margin-right: 8px;
 }
-.footer-newsletter .newsletter input {
-  width: 100%;
-  height: 44px;
-  border-radius: 50px;
-  padding: 0 24px;
-  border: 0;
-  background-color: rgba(33, 33, 33, 0.12);
-  font-weight: 500;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-five .footer-app-store ul li {
+    margin-right: 6px;
+  }
 }
-.footer-newsletter .newsletter input::placeholder {
-  opacity: 1;
-  color: #6c6c6c;
+.footer-five .footer-app-store ul li:last-child {
+  margin-right: 0;
 }
-.footer-newsletter .newsletter input::-moz-placeholder {
-  opacity: 1;
-  color: #6c6c6c;
+@media (max-width: 767px) {
+  .footer-five .footer-app-store ul li {
+    width: 120px;
+  }
 }
-.footer-newsletter .newsletter input::-moz-placeholder {
-  opacity: 1;
-  color: #6c6c6c;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footer-five .footer-app-store ul li {
+    width: auto;
+  }
 }
-.footer-newsletter .newsletter input::-webkit-input-placeholder {
-  opacity: 1;
-  color: #6c6c6c;
-}
-.footer-newsletter .newsletter button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 44px;
-  width: 44px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border: 0;
-  font-size: 20px;
+.footer-five .copyright .text {
   color: #121212;
-  cursor: pointer;
-  background: none;
 }
-.footer-newsletter .text {
-  margin-top: 16px;
+.footer-five.footer-bark-five {
+  background-color: #f4f6f7;
 }
-
-.footer-copyright {
-  background-color: #2b354f;
+.footer-five.footer-bark-five .social li a {
+  color: #6c6c6c;
 }
-
+.footer-five.footer-bark-five .footer-support {
+  padding-top: 21px;
+}
+.footer-five.footer-bark-five .footer-support span {
+  color: #6c6c6c;
+}
+.footer-five.footer-bark-five .footer-app-store {
+  padding-top: 27px;
+}
+.footer-five.footer-bark-five .footer-app-store ul li {
+  color: #6c6c6c;
+}
+.footer-five.footer-bark-five .copyright .text {
+  color: #6c6c6c;
+}
+/* Footer Ends Here */
 .copyright {
   padding: 23px 0;
 }
 .copyright .text {
-  color: #fff;
+  color: #6c6c6c;
 }
 
 .back-to-top {
@@ -1213,7 +1161,7 @@ p.form-message.error {
   text-align: center;
   background-color: #0067f4;
   bottom: 10px;
-  right: 20px;
+  left: 20px;
   z-index: 999;
   color: #fff;
   font-size: 20px;
@@ -1225,4 +1173,64 @@ p.form-message.error {
 .back-to-top:hover {
   background-color: #005ad5;
   color: #fff;
+}
+
+/*Accordion*/
+
+.about-six .faq-accordion .accordion .card {
+  border: 0;
+  background: 0 0;
+}
+
+.about-six .faq-accordion .accordion .card .card-header {
+  padding: 0;
+  border: 0;
+  background: 0 0;
+  margin-top: 40px;
+}
+
+.about-six .faq-accordion .accordion .card .card-header a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  position: relative;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-six .faq-accordion .accordion .card .card-header a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-six .faq-accordion .accordion .card .card-header a {
+    font-size: 16px;
+  }
+}
+
+.about-six .faq-accordion .accordion .card .card-header a::before {
+  content: "\E957";
+  font-family: lineicons;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.about-six .faq-accordion .accordion .card .card-header .collapsed::before {
+  content: "\E959";
+}
+
+.about-six .faq-accordion .accordion .card .card-body {
+  padding: 20px 20px 0;
+}
+
+.about-six .faq-image img {
+  width: 100%;
 }

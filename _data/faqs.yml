@@ -1,0 +1,69 @@
+
+- id: faq0
+  target: collapse0
+  question: What is EzySign?
+  question_mm: What is EzySign?
+  answer:  "EzySign allows you to electronically request and add legally valid signatures to any document, from new hire agreements to loans, to NDAs."
+  answer_mm: "EzySign allows you to electronically request and add legally valid signatures to any document, from new hire agreements to loans, to NDAs."  
+
+
+- id: faq1
+  target: collapse1
+  question: What is an electronic Signature?
+  question_mm: What is an electronic Signature?
+  answer:  "An eSignature is a handwritten autograph of a person made with the help of appropriate software from various devices: desktops, tablets or smartphones. They're used to confirm the integrity and authenticity of a signed document in its electronic form. E-signatures are advantageous features for certifying documents online with a single click. And they help companies to conclude transactions, manage relevant records quickly and significantly save time and reduce expenses. Check it out, and keep up the great work!"
+  answer_mm: "An eSignature is a handwritten autograph of a person made with the help of appropriate software from various devices : desktops, tablets or smartphones. They're used to confirm the integrity and authenticity of a signed document in its electronic form. E-signatures are advantageous features for certifying documents online with a single click. And they help companies to conclude transactions, manage relevant records quickly and significantly save time and reduce expenses. Check it out, and keep up the great work!"  
+
+- id: faq2
+  target: collapse2
+  question: Is digital signature same as electronic signature?
+  question_mm: Is digital signature same as electronic signature?
+  answer:  "In general, a digital signature is a reliable way to implement an electronic signature when the signatory is verified by obtaining a certificate of authentication based on Public Key Infrastructure (PKI) protocol from a government-authorized Certifying Authority (CA). In the case of esignatures, the authenticity of the signer is not required to be certified."
+  answer_mm: "In general, a digital signature is a reliable way to implement an electronic signature when the signatory is verified by obtaining a certificate of authentication based on Public Key Infrastructure (PKI) protocol from a government-authorized Certifying Authority (CA). In the case of esignatures, the authenticity of the signer is not required to be certified."  
+
+- id: faq3
+  target: collapse3
+  question: Is EzySign Signatures are secure?
+  question_mm: Is EzySign Signatures are secure?
+  answer:  "Our electronic signature service is secure for any kind of business, so you may rest assured that your information will be stored safely. Besides, your records are legally binding and comply with ESIGN authentication and protection requirements. We operate according to SOC 2 Type II certification. This means we guarantee compliance with industry standards for protection, continuity, availability, and system confidentiality. Feel free to review the details of our top grade IT security resources."
+  answer_mm: "Our electronic signature service is secure for any kind of business, so you may rest assured that your information will be stored safely. Besides, your records are legally binding and comply with ESIGN authentication and protection requirements. We operate according to SOC 2 Type II certification. This means we guarantee compliance with industry standards for protection, continuity, availability, and system confidentiality. Feel free to review the details of our top grade IT security resources."  
+
+- id: faq4
+  target: collapse4
+  question: How do electronic signature work with EzySign?
+  question_mm: How do electronic signature work with EzySign?
+  answer: "<div>
+                                        It’s even easier than you may expect. You just open the template and set the Signature Field in one click. Then, simply draw, type or upload an image of your customized autograph within seconds. Moreover, you can outline it directly onto a touchscreen if you are on a tablet or mobile device. You can do much more:
+<ol style='list-style:decimal;'><li >Make your own templates of eSignature contracts and agreements or use ready-made forms from EzySign's extensive library. </li>
+<li>Place signature fields wherever you want on the page. </li>
+<li>Send a record to sign to either single or multiple recipients at once. </li>
+<li>Establish a specific signing order for forms. </li>
+<li>Create and send a Signing Link or Customized invitation. </li>
+</ol>
+
+                                    </div>"  
+  answer_mm: "<div>
+                                        It’s even easier than you may expect. You just open the template and set the Signature Field in one click. Then, simply draw, type or upload an image of your customized autograph within seconds. Moreover, you can outline it directly onto a touchscreen if you are on a tablet or mobile device. You can do much more:
+<ol style='list-style:decimal;'><li>Make your own templates of eSignature contracts and agreements or use ready-made forms from EzySign's extensive library. </li>
+<li>Place signature fields wherever you want on the page. </li>
+<li>Send a record to sign to either single or multiple recipients at once. </li>
+<li>Establish a specific signing order for forms. </li>
+<li>Create and send a Signing Link or Customized invitation. </li>
+</ol>
+                                    </div>"  
+- id: faq5
+  target: collapse5
+  question: What is Template?
+  question_mm: What is Template?
+  answer:  "Templates are reusable signature documents that are best used for commonly used forms such as NDAs, offer letters, or sales agreements. Configure them once, save them as templates, and use them again the next time you need them."
+  answer_mm: "Templates are reusable signature documents that are best used for commonly used forms such as NDAs, offer letters, or sales agreements. Configure them once, save them as templates, and use them again the next time you need them."  
+
+- id: faq6
+  target: collapse6
+  question: How do recepients sign documents with EzySign?
+  question_mm: How do recepients sign documents with EzySign?
+  answer:  "Our streamlined e-signature software makes it extremely simple and convenient for any customer, partner or employee to sign and return documents in a few quick clicks. No registration is required. After someone receives a signing link or email invitation, they can e-sign the template in the quickest way possible: by typing, drawing or capturing the signature with their camera."
+  answer_mm: "Our streamlined e-signature software makes it extremely simple and convenient for any customer, partner or employee to sign and return documents in a few quick clicks. No registration is required. After someone receives a signing link or email invitation, they can e-sign the template in the quickest way possible: by typing, drawing or capturing the signature with their camera."  
+
+
+

@@ -22,13 +22,7 @@
                 <li class="nav-item active">
                   <a class="page-scroll" href="#home">HOME</a>
                 </li>
-                {%for menu in site.data.section_menus%}
-                <li class="nav-item">
-                  <a class="page-scroll" href="#{{ menu.href }}">{{
-                    menu.text
-                  }}</a>
-                </li>
-                {%endfor%}
+                {% include menu.html %}
               </ul>
             </div>
 
@@ -71,11 +65,11 @@
               {{ hero_subtitle.first.value }}
             </p>
             <ul class="header-btn">
-              <li><a class="main-btn btn-one" href="#">GET IN TOUCH</a></li>
-              <li>
+              <li><a class="main-btn btn-one page-scroll" href="#contact">GET IN TOUCH</a></li>
+              <!-- <li>
                 <a class="main-btn btn-two video-popup" href="https://www.youtube.com/watch?v=r44RKWyfcFw">WATCH THE
                   VIDEO <i class="lni-play"></i></a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <!-- header content -->

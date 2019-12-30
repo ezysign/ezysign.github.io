@@ -1,0 +1,7 @@
+{%for menu in site.data.section_menus%}
+<li class="nav-item">
+  <a class="page-scroll" href="#{{ menu.href }}">{{
+    menu.text
+  }}</a>
+</li>
+{%endfor%}

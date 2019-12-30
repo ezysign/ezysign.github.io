@@ -1,8 +1,8 @@
-# - href: service
-#   text:
+- href: service
+  text: Service
 
-# - href: pricing
-#   text:
+- href: faq
+  text: FAQ
 
 - href: contact
   text: Contact
