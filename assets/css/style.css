@@ -818,6 +818,7 @@ p {
   width: 100%;
 }
 
+
 /*===========================
     5.CALL TO ACTION css 
 ===========================*/
@@ -1175,6 +1176,15 @@ p.form-message.error {
   color: #fff;
 }
 
+
+/*===========================
+       8.FAQ css 
+===========================*/
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /*Accordion*/
 
 .about-six .faq-accordion .accordion .card {
@@ -1234,3 +1244,8 @@ p.form-message.error {
 .about-six .faq-image img {
   width: 100%;
 }
+
+
+/*===========================
+       8.FAQ ends Here 
+===========================*/
