@@ -1,0 +1,4 @@
+Sitemap: http://ezysign.cc/sitemap.xml
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
