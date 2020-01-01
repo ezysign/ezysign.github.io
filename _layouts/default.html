@@ -1,5 +1,7 @@
 {% assign title = site.data.texts | where:"name","title_text" %} {% assign
   description = site.data.texts | where:"name","description" %}
+  {% assign
+    hero_subtitle = site.data.texts | where:"name","hero_subtitle" %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,18 +15,18 @@
     />
     <!-- meta tags -->
     <meta name="title" content="{{ title.first.value }}" />
-    <meta name="description" content="{{description.first.value}}"">
+    <meta name="description" content="{{description.first.value}}">
     <meta
       name="keywords"
-      content="eSignature, secure signing, reliable signing, digital signature"
+      content="digital signature, electronic signature, eSignature, secure signing, reliable signing"
     />
     <!-- og:tags -->
 
-    <meta property="og:title" content="EzySign | bringing better signing experience">
-    <meta property="og:site_name" content="A simple and customizable, signing solution to make your signing experience better!">
+    <meta property="og:title" content="{{ title.first.value }}">
+    <meta property="og:site_name" content='EzySign'>
     <meta property="og:url" content="https://ezysign.cc">
-    <meta property="og:description" content="Why hassle with paper contracts? Get a secure and reliable eSignature solution and digitally transform your business, with EzySign.">
-    <meta property="og:type" content="product">
+    <meta property="og:description" content="{{description.first.value}}">
+    <meta property="og:type" content="article">
     <meta property="og:image" content="https://source.unsplash.com/LNlzd-Y7orw">
     <meta property="og:image" content="https://source.unsplash.com/SkFdmKGxQ44">
 
