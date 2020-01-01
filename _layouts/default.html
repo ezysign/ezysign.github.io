@@ -1,5 +1,5 @@
 {% assign title = site.data.texts | where:"name","title_text" %} {% assign
-why_hassle = site.data.texts | where:"name","why_hassle" %}
+  description = site.data.texts | where:"name","description" %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,9 +13,9 @@ why_hassle = site.data.texts | where:"name","why_hassle" %}
     />
     <!-- meta tags -->
     <meta name="title" content="{{ title.first.value }}" />
-    <meta name="description" content="{{why_hassle.first.value}}"">
+    <meta name="description" content="{{description.first.value}}"">
     <meta
-      name=" keywords"
+      name="keywords"
       content="eSignature, secure signing, reliable signing, digital signature"
     />
     <meta name="robots" content="index, follow" />
@@ -26,7 +26,7 @@ why_hassle = site.data.texts | where:"name","why_hassle" %}
     <!-- Meta tag ends -->
 
     <!--====== Title ======-->
-    <title>{{ page.title }}</title>
+    <title>{{ title.first.value }}</title>
 
     <!--====== Favicon Icon ======-->
     <link
