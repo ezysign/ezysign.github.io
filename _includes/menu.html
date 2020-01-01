@@ -1,7 +1,14 @@
+
 {%for menu in site.data.section_menus%}
-<li class="nav-item">
-  <a class="page-scroll" href="#{{ menu.href }}">{{
-    menu.text
-  }}</a>
-</li>
+    {% if forloop.first == true %}
+    <li class="nav-item active">
+        <a class="page-scroll" href="#home" title="{{menu.title}}" data-ga="{{menu.data_ga}}">{{menu.text}}</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+        <a class="page-scroll" href="#{{ menu.href }}" title="{{menu.title}}" data-ga="{{menu.data_ga}}">{{
+        menu.text
+        }}</a>
+    </li>
+    {%endif%}
 {%endfor%}
