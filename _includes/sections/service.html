@@ -4,6 +4,8 @@
 {% assign service_item_title_efficient = site.data[page.language].texts | where:"name","service_item_title_efficient" %}
 {% assign service_item_title_trust = site.data[page.language].texts | where:"name","service_item_title_trust" %}
 {% assign service_item_body_trust = site.data[page.language].texts | where:"name","service_item_body_trust" %}
+{% assign service_item_title_eco_friendly = site.data[page.language].texts | where:"name","service_item_title_eco_friendly" %}
+{% assign service_item_body_eco_friendly = site.data[page.language].texts | where:"name","service_item_body_eco_friendly" %}
 <section id="service" class="services-area">
     <div class="container">
         <div class="row">
@@ -38,6 +40,18 @@
                         <div class="services-content media-body">
                             <h4 class="services-title">{{service_item_title_trust.first.value}}</h4>
                             <p class="text">{{service_item_body_trust.first.value}}</p>
+                        </div>
+                    </div> <!-- services content -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="services-content mt-40 d-sm-flex">
+                        <div class="services-icon">
+                            <i class="lni-leaf"></i>
+                        </div>
+                        <div class="services-content media-body">
+                            <h4 class="services-title">{{service_item_title_eco_friendly.first.value}}</h4>
+                            <p class="text">{{service_item_body_eco_friendly.first.value}}</p>
                         </div>
                     </div> <!-- services content -->
                 </div>

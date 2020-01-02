@@ -1,14 +1,14 @@
 - name: title_text
-  value: "EzySign | bringing better E Signature experience"
+  value: "EzySign | bringing better eSignature experience"
 
 - name: hero_title
-  value: Bringing better E Signature experience.
+  value: Bringing better eSignature experience.
 
 - name: hero_sub_title
-  value: A simple and customizable, E Signature solution to make your signing experience better!
+  value: Its time to stop using paperbased contracts signing to make an agreement. EzySign will help your organization to digitize and speed up your signing process from contract template preperation, sending contracts, tracking the workflow and signing of recepients with safe and ease.
 
 - name: description
-  value: Why hassle with paper contracts? Get a secure and reliable E Signature solution and digitally transform your business, with EzySign.
+  value: Why hassle with paper contracts? Get a secure and reliable eSignature solution and digitally transform your business, with EzySign.
 
 - name: why_hassle
   value: Stay tune with us!
@@ -26,13 +26,20 @@
   value: Efficient
 
 - name: service_item_body_efficient
-  value: Create secure and intuitive E Signature workflows on any device, track the status of documents right in your account, build online fillable forms – all within a single solution.
+  value: Create secure and intuitive eSignature workflows on any device, track the status of documents right in your account, build online fillable forms – all within a single solution.
 
 - name: service_item_title_trust
   value: Trust
 
 - name: service_item_body_trust
   value: EzySign is compliant with the industry-leading security standards ensuring your documents are signed, shared and stored with multiple levels of protection.
+
+- name: service_item_title_eco_friendly
+  value: Eco Friendly
+
+- name: service_item_body_eco_friendly
+  value: Now nearly 4 billion trees or 35 percent of the total trees cut around the world are used in paper industries on every continent. But we can save the trees by less papers as much as we can .you can relax for the eco friendliness as the whole process, all the contracts and documents that need to sign go securely and returned securely after signing through digital with EzySign. 
+
 
 - name: call_to_action_title
   value: Find out how EzySign can help your business
@@ -43,11 +50,14 @@
 - name: call_to_action_button_text
   value: SEND MAIL
 
+- name: contact_us_get_in_touch
+  value: Register Now
+
 - name: contact_us_title
-  value: Want to know more about EzySign ?
+  value: EzySign will come out very soon
 
 - name: contact_us_subtitle
-  value: Stay tune with us
+  value: Want to know more about EzySign register to get updates from us!
 
 - name: contact_us_form_name
   value: Your Name
@@ -68,4 +78,4 @@
   value: Send Message
 
 - name: lang_switch_text
-  value: This page is offered in following languages
+  value: This page offers offered in following languages

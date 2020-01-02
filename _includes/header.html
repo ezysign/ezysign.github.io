@@ -1,5 +1,6 @@
 {% assign hero_title = site.data[page.language].texts | where:"name","hero_title" %}
 {% assign hero_subtitle = site.data[page.language].texts | where:"name","hero_sub_title" %}
+{% assign contact_us_get_in_touch = site.data[page.language].texts | where:"name","contact_us_get_in_touch" %}
 <header class="header-area">
   <div class="navgition navgition-transparent">
     <div class="container">
@@ -63,7 +64,7 @@
               {{ hero_subtitle.first.value }}
             </p>
             <ul class="header-btn">
-              <li><a class="main-btn btn-one page-scroll" href="#contact">GET IN TOUCH</a></li>
+              <li><a class="main-btn btn-one page-scroll" href="#contact">{{contact_us_get_in_touch.first.value}}</a></li>
               <!-- <li>
                 <a class="main-btn btn-two video-popup" href="https://www.youtube.com/watch?v=r44RKWyfcFw">WATCH THE
                   VIDEO <i class="lni-play"></i></a>
