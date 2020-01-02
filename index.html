@@ -1,6 +1,16 @@
----
-layout: default
-title: "EzySign : bringing better signing experience"
----
-
-{% include sections.html %}
+<!DOCTYPE html>
+<html lang="{{site.defaultLang}}">
+<head>
+    <meta charset="utf-8">
+    <title>EzySign | bringing better signing experience</title>
+</head>
+<body>
+<script>
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.indexOf('en') == 0)
+        window.location = '/en/';
+    else
+        window.location = '/mm/';
+</script>
+</body>
+</html>

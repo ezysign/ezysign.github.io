@@ -1,5 +1,7 @@
 <!-- Accordion FAQ -->
+{% assign faq = site.data[page.language].texts | where:"name","faq_text" %}
 <section id="faq" class="faq about-six mb-100">
+    
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -7,12 +9,12 @@
             <div class="faq-title">
               <h6 class="sub-title"></h6>
               <h2 class="title">
-                Frequently Asked Questions <br />
+                {{faq.first.value}}<br />
               </h2>
             </div>
             <div class="faq-accordion">
               <div class="accordion" id="accordionExample">
-                {%for faq in site.data.faqs%}
+                {%for faq in site.data[page.language].faqs%}
                 
                     <div class="card">
                         <div class="card-header" id="{{faq.id}}">
@@ -49,7 +51,7 @@
         </div>
         <div class="col-lg-6">
           <div class="faq-image mt-50">
-            <img src="assets/images/about/faq.jpg" alt="faq" />
+            <img src="../assets/images/about/faq.jpg" alt="faq" />
           </div>
         </div>
       </div>

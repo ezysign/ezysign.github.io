@@ -1,0 +1,71 @@
+- name: title_text
+  value: "EzySign | bringing better E Signature experience"
+
+- name: hero_title
+  value: Bringing better E Signature experience.
+
+- name: hero_sub_title
+  value: A simple and customizable, E Signature solution to make your signing experience better!
+
+- name: description
+  value: Why hassle with paper contracts? Get a secure and reliable E Signature solution and digitally transform your business, with EzySign.
+
+- name: why_hassle
+  value: Stay tune with us!
+
+- name: faq_text
+  value: Frequently Asked Questions
+
+- name: service_title
+  value: Made For
+
+- name: service_text
+  value: People who wants to save time, money & love nature by designing and managing entire agreement process on the fly. Satisfaction guaranteed!
+
+- name: service_item_title_efficient
+  value: Efficient
+
+- name: service_item_body_efficient
+  value: Create secure and intuitive E Signature workflows on any device, track the status of documents right in your account, build online fillable forms – all within a single solution.
+
+- name: service_item_title_trust
+  value: Trust
+
+- name: service_item_body_trust
+  value: EzySign is compliant with the industry-leading security standards ensuring your documents are signed, shared and stored with multiple levels of protection.
+
+- name: call_to_action_title
+  value: Find out how EzySign can help your business
+
+- name: call_to_action_text
+  value: You let us know whenever you want us to update anything or think something can be optimised. 
+
+- name: call_to_action_button_text
+  value: SEND MAIL
+
+- name: contact_us_title
+  value: Want to know more about EzySign ?
+
+- name: contact_us_subtitle
+  value: Stay tune with us
+
+- name: contact_us_form_name
+  value: Your Name
+
+- name: contact_us_form_email
+  value: Your Email
+
+- name: contact_us_form_subject
+  value: Subject
+
+- name: contact_us_form_phone
+  value: Phone
+
+- name: contact_us_form_message
+  value: Your Message
+
+- name: contact_us_form_button
+  value: Send Message
+
+- name: lang_switch_text
+  value: This page is offered in following languages

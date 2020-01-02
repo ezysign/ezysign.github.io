@@ -1,10 +1,11 @@
+{% assign language_switch_text = site.data[page.language].texts | where:"name","lang_switch_text" %}
 <section class="footer-area footer-five footer-bark-five ">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="footer-logo text-center">
           <a class="mt-30" href="index.html"
-            ><img src="assets/images/logo.svg" alt="Logo"
+            ><img src="../assets/images/logo.svg" alt="Logo"
           /></a>
         </div>
         <!-- footer logo -->
@@ -14,6 +15,26 @@
               ><i class="lni-facebook-filled"></i
             ></a>
           </li>
+        </ul>
+        <div class=" text-center mt-20">
+          <p class="text">
+            {{language_switch_text.first.value}}
+          </p>
+        </div>
+        <ul class="social text-center ">
+          {% for lang in site.languageNames %}
+          
+          <li> <a href="{{lang.root_url}}" title="{{ lang.name }}">{{ lang.icon }}</a></li>
+          
+          {%endfor%}
+          <!-- <li>
+            <a  href="/en" title="English"
+              >🇬🇧
+            </a>
+          </li>
+          <li> <a href="/mm" title="မြန်မာ"
+            >🇲🇲
+          </a></li> -->
         </ul>
         <!-- social -->
         <div class="footer-support text-center">

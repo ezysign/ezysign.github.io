@@ -1,0 +1,19 @@
+- href: home
+  data_ga: navigation | EzySign | home
+  title: EzySign Home
+  text: Home
+
+- href: service
+  data_ga: navigation | EzySign | service
+  title: EzySign Service
+  text: Service
+
+- href: faq
+  data_ga: navigation | EzySign | Frequently Asked Question
+  title: EzySign Frequently Asked Question 
+  text: FAQ
+
+- href: contact
+  data_ga: navigation | EzySign | contact
+  title: EzySign Contact Us 
+  text: Contact

@@ -1,5 +1,5 @@
 
-{%for menu in site.data.section_menus%}
+{%for menu in site.data[page.language].section_menus%}
     {% if forloop.first == true %}
     <li class="nav-item active">
         <a class="page-scroll" href="#home" title="{{menu.title}}" data-ga="{{menu.data_ga}}">{{menu.text}}</a>

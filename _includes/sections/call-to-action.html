@@ -1,21 +1,23 @@
 <!--====== CALL TO ACTION PART START ======-->
+{% assign call_to_action_title = site.data[page.language].texts | where:"name","call_to_action_title" %}
+{% assign call_to_action_text = site.data[page.language].texts | where:"name","call_to_action_text" %}
+{% assign call_to_action_button_text = site.data[page.language].texts | where:"name","call_to_action_button_text" %}
 
 <section id="call-to-action" class="call-to-action">
     <div class="call-action-image">
-        <img src="assets/images/call-to-action.png" alt="call-to-action">
+        <img src="../assets/images/call-to-action.png" alt="call-to-action">
     </div>
 
     <div class="container-fluid">
         <div class="row justify-content-end">
             <div class="col-lg-6">
                 <div class="call-action-content text-center">
-                    <h2 class="call-title">Find out how EzySign can help your business.</h2>
-                    <p class="text">You let us know whenever you want us to update anything or think something can be
-                        optimised.</p>
+                    <h2 class="call-title">{{call_to_action_title.first.value}}</h2>
+                    <p class="text">{{call_to_action_text.first.value}}</p>
                     <div class="call-newsletter">
                         <i class="lni-envelope"></i>
-                        <input type="text" placeholder="hello@ezysign.cc">
-                        <button type="submit" onClick="window.location.href = 'mailto:hello@ezysign.cc?subject=Request%20for%20demo&body=I%20would%20love%20to%20here%20more';">SUBSCRIBE</button>
+                        <input type="text" disabled placeholder="hello@ezysign.cc">
+                        <button type="submit" onClick="window.location.href = 'mailto:hello@ezysign.cc?subject=Request%20for%20demo&body=I%20would%20love%20to%20here%20more';">{{call_to_action_button_text.first.value}}</button>
                     </div>
                 </div> <!-- slider-content -->
             </div>

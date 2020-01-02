@@ -1,11 +1,19 @@
 <!--====== CONTACT PART START ======-->
-{% assign description = site.data.texts | where:"name","why_hassle" %}
+{% assign contact_us_title = site.data[page.language].texts | where:"name","contact_us_title" %}
+{% assign description = site.data[page.language].texts | where:"name","contact_us_subtitle" %}
+{% assign contact_us_form_name = site.data[page.language].texts | where:"name","contact_us_form_name" %}
+{% assign contact_us_form_email = site.data[page.language].texts | where:"name","contact_us_form_email" %}
+{% assign contact_us_form_subject = site.data[page.language].texts | where:"name","contact_us_form_subject" %}
+{% assign contact_us_form_phone = site.data[page.language].texts | where:"name","contact_us_form_phone" %}
+{% assign contact_us_form_message = site.data[page.language].texts | where:"name","contact_us_form_message" %}
+{% assign contact_us_form_button = site.data[page.language].texts | where:"name","contact_us_form_button" %}
+
 <section id="contact" class="contact-area">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-10">
-                    <h4 class="title">Want to know more about EzySign ?</h4>
+                    <h4 class="title">{{contact_us_title.first.value }}</h4>
                     <p class="text"> {{description.first.value }}</p>
                 </div> <!-- section title -->
             </div>
@@ -17,35 +25,35 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="single-form form-group">
-                                    <input type="text" name="name" placeholder="Your Name"
+                                    <input type="text" name="name" placeholder="{{contact_us_form_name.first.value}}"
                                         data-error="Name is required." required="required">
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
                             </div>
                             <div class="col-md-6">
                                 <div class="single-form form-group">
-                                    <input type="email" name="email" placeholder="Your Email"
+                                    <input type="email" name="email" placeholder="{{contact_us_form_email.first.value}}"
                                         data-error="Valid email is required." required="required">
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
                             </div>
                             <div class="col-md-6">
                                 <div class="single-form form-group">
-                                    <input type="text" name="subject" placeholder="Subject"
+                                    <input type="text" name="subject" placeholder="{{contact_us_form_subject.first.value}}"
                                         data-error="Subject is required." required="required">
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
                             </div>
                             <div class="col-md-6">
                                 <div class="single-form form-group">
-                                    <input type="text" name="phone" placeholder="Phone" data-error="Phone is required."
+                                    <input type="text" name="phone" placeholder="{{contact_us_form_phone.first.value}}" data-error="Phone is required."
                                         required="required">
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
                             </div>
                             <div class="col-md-12">
                                 <div class="single-form form-group">
-                                    <textarea placeholder="Your Mesaage" name="message"
+                                    <textarea placeholder="{{contact_us_form_message.first.value}}" name="message"
                                         data-error="Please, leave us a message." required="required"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
@@ -53,7 +61,7 @@
                             <p class="form-message"></p>
                             <div class="col-md-12">
                                 <div class="single-form form-group text-center">
-                                    <button type="submit" class="main-btn">send message</button>
+                                    <button type="submit" class="main-btn">{{contact_us_form_button.first.value}}</button>
                                 </div> <!-- single form -->
                             </div>
                         </div> <!-- row -->
