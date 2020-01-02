@@ -1,19 +1,19 @@
 - href: home
   data_ga: navigation | EzySign | home
-  title: EzySign Home
-  text: Home
+  title: EzySign ပင်မစာမျက်နှာ
+  text: ပင်မစာမျက်နှာ
 
 - href: service
   data_ga: navigation | EzySign | service
-  title: EzySign Service
-  text: Service
+  title: EzySign ဝန်ဆောင်မှု
+  text: ဝန်ဆောင်မှု
 
 - href: faq
   data_ga: navigation | EzySign | Frequently Asked Question
-  title: EzySign Frequently Asked Question 
-  text: FAQ
+  title: EzySign မှာ အမေးများသောမေးခွန်းများ
+  text: အမေးများသောမေးခွန်းများ
 
 - href: contact
   data_ga: navigation | EzySign | contact
-  title: EzySign Contact Us 
-  text: Contact
+  title: EzySign ဆက်သွယ်ရန်
+  text: ဆက်သွယ်ရန်
