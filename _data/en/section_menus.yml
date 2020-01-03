@@ -3,10 +3,15 @@
   title: EzySign Home
   text: Home
 
-- href: service
+- href: features
   data_ga: navigation | EzySign | service
   title: EzySign Service
-  text: Service
+  text: Features
+
+- href: why-ezysign
+  data_ga: navigation | EzySign | why
+  title: EzySign Service
+  text: Why EzySign?
 
 - href: faq
   data_ga: navigation | EzySign | Frequently Asked Question
