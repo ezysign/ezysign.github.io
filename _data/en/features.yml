@@ -1,0 +1,20 @@
+- title: Template Management
+  subtitle: All the signature form can be managed in one place.
+  icon: lni-files
+- title: User RoleManagement
+  subtitle: Roles can be defined to users so that only authorized users can access documents.
+  icon: lni-users
+
+- title: Dashboard
+  subtitle: Know what has done with the recepients signing progress via Dashboard so that you can manage your business efficiently
+  icon: lni-dashboard
+- title: Notification
+  subtitle: No more phone calls or emails to acknowledge the recepients. All the recepients signing events and required to sign will be notified by system.
+  icon: lni-information
+
+- title: SignatureFlow Management
+  subtitle: Arrange the order of the recepients for approval signing.
+  icon: lni-direction-alt
+- title: Signer Attachments
+  subtitle: Ask your recipients to upload and attach documents as part of the signing process, such as a driver's or professional licenses.
+  icon: lni-protection

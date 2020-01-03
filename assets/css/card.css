@@ -1,0 +1,92 @@
+.single-card {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 250px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.single-card:hover {
+    -webkit-box-shadow: 0 20px 25px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 20px 25px rgba(0,0,0,.15);
+    box-shadow: 0 20px 25px rgba(0,0,0,.15)
+}
+.single-card  a {
+    width:100%
+}
+
+.single-card .card-image {
+    text-align:center;
+}
+
+.single-card .card-image i {
+    font-size: 50px;
+}
+
+.single-card .card-content {
+    padding: 16px
+}
+
+.single-card .card-content .card-title {
+    margin-bottom: 0
+}
+
+.single-card .card-content .card-title a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #121212;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .single-card .card-content .card-title a {
+        font-size:20px
+    }
+}
+
+@media(max-width: 767px) {
+    .single-card .card-content .card-title a {
+        font-size:20px
+    }
+}
+
+.single-card .card-content .card-title a:hover {
+    color: #0067f4
+}
+
+.single-card .card-content .text {
+    color: #121212;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .single-card .card-content .text {
+        font-size:14px
+    }
+}
+
+@media(max-width: 767px) {
+    .single-card .card-content .text {
+        font-size:14px
+    }
+}
+
+.single-card .card-content .card-btn {
+    margin-top: 24px
+}
+
+.single-card .card-content .card-btn .main-btn {
+    line-height: 48px
+}

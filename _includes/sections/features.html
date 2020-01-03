@@ -1,0 +1,41 @@
+{% assign feature_title = site.data[page.language].texts | where:"name","feature_title" %}
+<section data-scroll-index="4" id="features" class="demo-card pt-90 pb-100">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section-title text-center pb-10">
+          <h4 class="title">{{feature_title.first.value}}</h4>
+          <p class="text">
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        {%for feature in site.data[page.language].features%}
+      <div class="col-lg-4 col-md-6">
+        <div
+          class="single-card card-style-one mt-30 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="0"
+        >
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="http://preview.uideck.com/items/start/"
+          >
+            <div class="card-image">
+              <i class={{feature.icon}}></i>
+            </div>
+            <div class="card-content text-center">
+              <h4 class="card-title">{{feature.title}}</h4>
+              <p class="text">{{feature.subtitle}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+{% assign why_title = site.data[page.language].texts | where:"name","why_title" %}
+{% assign why_text = site.data[page.language].texts | where:"name","why_text" %}
+{% assign why_item_body_efficient = site.data[page.language].texts | where:"name","why_item_body_efficient" %}
+{% assign why_item_title_efficient = site.data[page.language].texts | where:"name","why_item_title_efficient" %}
+{% assign why_item_title_trust = site.data[page.language].texts | where:"name","why_item_title_trust" %}
+{% assign why_item_body_trust = site.data[page.language].texts | where:"name","why_item_body_trust" %}
+{% assign why_item_title_eco_friendly = site.data[page.language].texts | where:"name","why_item_title_eco_friendly" %}
+{% assign why_item_body_eco_friendly = site.data[page.language].texts | where:"name","why_item_body_eco_friendly" %}
+<section id="why-ezysign" class="services-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title pb-10">
+                    <h4 class="title">{{why_title.first.value}}</h4>
+                    <p class="text">{{why_text.first.value}}</p>
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="services-content mt-40 d-sm-flex">
+                            <div class="services-icon">
+                                <i class="lni-bolt"></i>
+                            </div>
+                            <div class="services-content media-body">
+                                <h4 class="services-title">{{why_item_title_efficient.first.value}}</h4>
+                                <p class="text">{{why_item_body_efficient.first.value}}</p>
+                            </div>
+                        </div> <!-- services content -->
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="services-content mt-40 d-sm-flex">
+                        <div class="services-icon">
+                            <i class="lni-handshake"></i>
+                        </div>
+                        <div class="services-content media-body">
+                            <h4 class="services-title">{{why_item_title_trust.first.value}}</h4>
+                            <p class="text">{{why_item_body_trust.first.value}}</p>
+                        </div>
+                    </div> <!-- services content -->
+                </div>
+                
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-md-6">
+                <div class="services-content mt-40 d-sm-flex">
+                    <div class="services-icon">
+                        <i class="lni-leaf"></i>
+                    </div>
+                    <div class="services-content media-body">
+                        <h4 class="services-title">{{why_item_title_eco_friendly.first.value}}</h4>
+                        <p class="text">{{why_item_body_eco_friendly.first.value}}</p>
+                    </div>
+                </div> <!-- services content -->
+            </div>
+        </div>
+        </div> <!-- row -->
+    </div> <!-- conteiner -->
+    <div class="services-image d-lg-flex align-items-center">
+        <div class="image">
+            <img src="../assets/images/services.jpg" alt="Services">
+        </div>
+    </div> <!-- services image -->
+</section>
+
+<!--====== SERVICES PART ENDS ======-->
