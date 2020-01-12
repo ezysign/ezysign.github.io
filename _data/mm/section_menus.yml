@@ -3,6 +3,11 @@
   title: EzySign ပင်မစာမျက်နှာ
   text: ပင်မစာမျက်နှာ
 
+- href: benefits
+  data_ga: navigation | EzySign | benefits
+  title: EzySign ရဲ့ ရလဒ်များ
+  text: အကျိုးရလဒ်
+
 - href: features
   data_ga: navigation | EzySign | service
   title: EzySign အင်္ဂါရပ်များ

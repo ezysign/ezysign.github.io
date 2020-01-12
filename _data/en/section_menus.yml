@@ -3,10 +3,16 @@
   title: EzySign Home
   text: Home
 
+- href: benefits
+  data_ga: navigation | EzySign | service
+  title: EzySign Benefits
+  text: Benefits
+
 - href: features
   data_ga: navigation | EzySign | service
   title: EzySign Service
   text: Features
+
 
 - href: why-ezysign
   data_ga: navigation | EzySign | why

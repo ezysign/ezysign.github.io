@@ -16,6 +16,12 @@
 - name: faq_text
   value: Frequently Asked Questions
 
+- name: benefit_title_text
+  value: EzySign eSignature benefits
+
+- name: benefit_subtitle_text
+  value: EzySign eSignature accelerates agreements, eliminates manual tasks, and makes it easy to connect with the tools and systems you’re already using.
+
 - name: feature_title
   value: Feature that will empower your business
 

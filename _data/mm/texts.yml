@@ -16,6 +16,13 @@
 - name: faq_text
   value: အမေးများသောမေးခွန်းများ
 
+- name: benefit_title_text
+  value: EzySign eSignature ရဲ့ ရလဒ်များ
+
+- name: benefit_subtitle_text
+  value: EzySign ဟာ ဆိုရင် သင့်ရဲ့ သမားရိုးကျ သဘောတူညီမှုစာရွက်စာတမ်း ပြင်ဆင်မှုတွေကို မြန်ဆန်စေပြီးတော့ သင် ရင်းနှိးပြီးသားဖြစ်တဲ့ tools တွေနဲ့ ချိတ်ဆက်လို့ ရအောင်လုပ်ပေးထားပါတယ်။
+
+
 - name: feature_title
   value: သင့်လုပ်ငန်းကိုမြှင့်တင်ပေးမယ့် ဝန်ဆောင်မှုများ
 
