@@ -5,7 +5,7 @@
   value: Bringing better eSignature experience.
 
 - name: hero_sub_title
-  value: Its time to stop using paperbased contracts signing to make an agreement. EzySign will help your organization to digitize and speed up your signing process from contract template preperation, sending contracts, tracking the workflow and signing of recepients with safe and ease.
+  value: It’s time to stop using paper based contracts. Digitize your office workflow with EzySign. Save time, money, and close deals faster.
 
 - name: description
   value: Why hassle with paper contracts? Get a secure and reliable eSignature solution and digitally transform your business, with EzySign.
@@ -29,7 +29,7 @@
   value: Made For
 
 - name: why_text
-  value: People who wants to save time, money & love nature by designing and managing entire agreement process on the fly. Satisfaction guaranteed!
+  value: People who wants to save time, money and love the nature by designing and managing entire agreement process on the fly. Satisfaction guaranteed!
 
 - name: why_item_title_efficient
   value: Efficient
@@ -44,29 +44,29 @@
   value: EzySign is compliant with the industry-leading security standards ensuring your documents are signed, shared and stored with multiple levels of protection.
 
 - name: why_item_title_eco_friendly
-  value: Eco Friendly
+  value: Enhance your reputation
 
 - name: why_item_body_eco_friendly
-  value: Now nearly 4 billion trees or 35 percent of the total trees cut around the world are used in paper industries on every continent. But we can save the trees by less papers as much as we can .you can relax for the eco friendliness as the whole process, all the contracts and documents that need to sign go securely and returned securely after signing through digital with EzySign. 
+  value: It’s important to make doing business with your clients, partners, and employees simple and modern. With EzySign intuitive and error-proof guiding signing experience, you give them a faster, more convenient way to interact with you, reinforcing your reputation of being at the cutting edge of technology.
 
 
 - name: call_to_action_title
-  value: Find out how EzySign can help your business
+  value: EzySign will come out very soon
 
 - name: call_to_action_text
-  value: You let us know whenever you want us to update anything or think something can be optimised. 
+  value: Want to know more about EzySign register to get updates from us! 
 
 - name: call_to_action_button_text
-  value: SEND MAIL
+  value: STAY UPDATED
 
 - name: contact_us_get_in_touch
   value: Register Now
 
 - name: contact_us_title
-  value: EzySign will come out very soon
+  value: Find out how EzySign can help your business
 
 - name: contact_us_subtitle
-  value: Want to know more about EzySign register to get updates from us!
+  value: You let us know whenever you want us to update anything or think something can be optimised. 
 
 - name: contact_us_form_name
   value: Your Name
