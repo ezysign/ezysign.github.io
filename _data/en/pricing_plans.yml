@@ -1,0 +1,45 @@
+- name: Free
+  currency: $
+  price_monthly: 0
+  price_yearly: 0
+  features:
+    - description: Legally Binded eSignature
+    - description: Single User
+    - description: 3 Envelopes
+    - description: Google Drive Integration
+- name: Pro
+  currency: $
+  price_monthly: 11
+  price_yearly: 10
+  features:
+    - description: Legally Binded eSignature
+    - description: 5 Users
+    - description: 20 Envelopes (Add on applies)
+    - description: Google Drive Integration
+    - description: Mobile Login
+    - description: Reminder/Notification alert
+
+- name: Business
+  currency: $
+  price_monthly: 25
+  price_yearly: 22
+  features:
+    - description: Legally Binded eSignature
+    - description: Unlimited Users
+    - description: 100 Envelopes (Add on applies)
+    - description: Google Drive Integration
+    - description: Mobile Login
+    - description: Reminder/Notification alert
+
+- name: Enterprise
+  currency: $
+  price_monthly: 70
+  price_yearly: 60
+  features:
+    - description: Legally Binded eSignature
+    - description: Unlimited Users
+    - description: Unlimited Envelopes
+    - description: Google Drive Integration
+    - description: Mobile Login
+    - description: Reminder/Notification alert
+    - description: Bulk Send

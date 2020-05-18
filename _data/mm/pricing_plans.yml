@@ -1,0 +1,45 @@
+- name: Free
+  currency: $
+  price_monthly: 0
+  price_yearly: 0
+  features:
+    - description: တရားဝင် Electronic လက်မှတ်
+    - description: တဦးသာသုံးနိုင်
+    - description: စာအိတ် ၃ ခုပါဝင်
+    - description: Google Drive နဲ့ချိတ်ဆက်နိုင်
+- name: Pro
+  currency: $
+  price_monthly: 11
+  price_yearly: 10
+  features:
+    - description: တရားဝင် Electronic လက်မှတ်
+    - description: 5 Users
+    - description: စာအိတ် 50 အထိပို့နိုင်(စာအိတ်ထပ်မံဝယ်ယူနိုင်ပါသည်။)
+    - description: Google Drive နဲ့ချိတ်ဆက်နိုင်ခြင်း
+    - description: Mobile ဖုန်းဖြင့် Loginဝင်နိုင်ခြင်း
+    - description: အလိုအလျောက်အကြောင်းကြားခြင်း
+
+- name: Business
+  currency: $
+  price_monthly: 25
+  price_yearly: 22
+  features:
+    - description: တရားဝင် Electronic လက်မှတ်
+    - description: လူဦးရေအကန့်အသန့်မရှိ
+    - description: စာအိတ် 100 အထိပို့နိုင်(စာအိတ်ထပ်မံဝယ်ယူနိုင်ပါသည်။)
+    - description: Google Drive နဲ့ချိတ်ဆက်နိုင်ခြင်း
+    - description: Mobile ဖုန်းဖြင့် Loginဝင်နိုင်ခြင်း
+    - description: အလိုအလျောက်အကြောင်းကြားခြင်း
+
+- name: Enterprise
+  currency: $
+  price_monthly: 70
+  price_yearly: 60
+  features:
+    - description: တရားဝင် Electronic လက်မှတ်
+    - description: လူဦးရေအကန့်အသန့်မရှိ
+    - description: စာအိတ် အကန့်အသန့်မရှိ
+    - description: Google Drive နဲ့ချိတ်ဆက်နိုင်
+    - description: Mobile ဖုန်းဖြင့် Loginဝင်နိုင်ခြင်း
+    - description: အလိုအလျောက်အကြောင်းကြားခြင်း
+    - description: စာအိတ်အများအပြား ပို့ခြင်း

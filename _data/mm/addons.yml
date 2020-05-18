@@ -1,0 +1,11 @@
+- name: Pro(Addons)
+  currency: $
+  features:
+    - description: စာအိတ်အလုံး ၅၀ ကို $10
+    - description: စာအိတ်အလုံး ၁၀၀ ကို $18
+
+- name: Business(Addons)
+  currency: $
+  features:
+    - description: စာအိတ်အလုံး ၅၀ ကို $8
+    - description: စာအိတ်အလုံး ၁၀၀ ကို $14
