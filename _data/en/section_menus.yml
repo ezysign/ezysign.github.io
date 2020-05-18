@@ -13,18 +13,22 @@
   title: EzySign Service
   text: Features
 
-
 - href: why-ezysign
   data_ga: navigation | EzySign | why
   title: EzySign Service
   text: Why EzySign?
 
+- href: pricing
+  data_ga: navigation | EzySign | pricing
+  title: EzySign Price
+  text: Pricing
+
 - href: faq
   data_ga: navigation | EzySign | Frequently Asked Question
-  title: EzySign Frequently Asked Question 
+  title: EzySign Frequently Asked Question
   text: FAQ
 
 - href: contact
   data_ga: navigation | EzySign | contact
-  title: EzySign Contact Us 
+  title: EzySign Contact Us
   text: Contact

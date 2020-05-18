@@ -18,10 +18,15 @@
   title: EzySign Service
   text: Why EzySign?
 
+- href: pricing
+  data_ga: navigation | EzySign | pricing
+  title: EzySign စျေးနှုန်း
+  text: စျေးနှုန်း
+
 - href: faq
   data_ga: navigation | EzySign | Frequently Asked Question
-  title: EzySign မှာ အမေးများသောမေးခွန်းများ
-  text: အမေးများသောမေးခွန်းများ
+  title: အမေးအဖြေ
+  text: အမေးအဖြေ
 
 - href: contact
   data_ga: navigation | EzySign | contact

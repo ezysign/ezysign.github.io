@@ -108,7 +108,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #FFF;
+  color: #fff;
   margin: 0px;
 }
 
@@ -188,7 +188,7 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 .navgition.navgition-transparent {
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   position: absolute;
   top: 0;
   left: 0;
@@ -197,7 +197,7 @@ p {
 }
 .navgition.sticky {
   position: fixed;
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
@@ -214,7 +214,7 @@ p {
 .navgition .navbar .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: #FFF;
+  background-color: #fff;
   margin: 5px 0;
   display: block;
   position: relative;
@@ -249,7 +249,7 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color: #1B98E0;
+    background-color: #1b98e0;
     z-index: 8;
     padding: 10px 0;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
@@ -263,7 +263,7 @@ p {
     top: 116%;
     left: 0;
     width: 100%;
-    background-color: #1B98E0;
+    background-color: #1b98e0;
     z-index: 8;
     padding: 10px 0;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
@@ -280,7 +280,7 @@ p {
   line-height: 24px;
   font-weight: 700;
   padding: 26px 0;
-  color: #E3E3E3;
+  color: #e3e3e3;
   text-transform: uppercase;
   position: relative;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -293,7 +293,6 @@ p {
   .navgition .navbar .navbar-nav .nav-item a {
     padding: 10px 0;
     display: block;
-    
   }
 }
 @media (max-width: 767px) {
@@ -308,7 +307,7 @@ p {
   content: "";
   width: 8px;
   height: 4px;
-  background-color: #FFF;
+  background-color: #fff;
   left: 50%;
   margin: 0 2px;
   bottom: 14px;
@@ -337,7 +336,7 @@ p {
 }
 .navgition .navbar .navbar-nav .nav-item.active > a,
 .navgition .navbar .navbar-nav .nav-item:hover > a {
-  color: #FFF;
+  color: #fff;
 }
 .navgition .navbar .navbar-nav .nav-item.active > a::before,
 .navgition .navbar .navbar-nav .nav-item.active > a::after,
@@ -362,7 +361,7 @@ p {
 .navgition .navbar .navbar-social span {
   font-size: 16px;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   line-height: 24px;
   margin-right: 14px;
 }
@@ -374,7 +373,7 @@ p {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #FFF;
+  color: #fff;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -407,18 +406,24 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient( rgba(232, 237, 255, 0.9), 
-  rgba(239, 254, 255, 0.9) 50%, 
-  rgba(255, 255, 255, 0.87) 68%, 
-  rgba(255, 255, 255, 0.12) );
-  background: -o-linear-gradient( rgba(232, 237, 255, 0.9), 
-  rgba(239, 254, 255, 0.9) 50%, 
-  rgba(255, 255, 255, 0.87) 68%, 
-  rgba(255, 255, 255, 0.12) );
-  background:linear-gradient( rgba(232, 237, 255, 0.9), 
-  rgba(239, 254, 255, 0.9) 50%, 
-  rgba(255, 255, 255, 0.87) 68%, 
-  rgba(255, 255, 255, 0.12) );
+  background: -webkit-linear-gradient(
+    rgba(232, 237, 255, 0.9),
+    rgba(239, 254, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.87) 68%,
+    rgba(255, 255, 255, 0.12)
+  );
+  background: -o-linear-gradient(
+    rgba(232, 237, 255, 0.9),
+    rgba(239, 254, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.87) 68%,
+    rgba(255, 255, 255, 0.12)
+  );
+  background: linear-gradient(
+    rgba(232, 237, 255, 0.9),
+    rgba(239, 254, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0.87) 68%,
+    rgba(255, 255, 255, 0.12)
+  );
 }
 .header-hero .header-content {
   padding-top: 195px;
@@ -657,6 +662,7 @@ p {
 }
 
 .single-pricing {
+  min-height: 45rem;
   -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -754,6 +760,9 @@ p {
 }
 .single-pricing .pricing-btn .main-btn {
   background-color: #0067f4;
+  position: absolute;
+  bottom: 68px;
+  left: 45px;
   border-radius: 50px;
   color: #fff;
   border-color: #0067f4;
@@ -813,12 +822,176 @@ p {
   width: 100%;
 }
 
+/*===========================
+Add on Pricing
+===========================*/
+
+.addon-pricing {
+  min-height: 20rem;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 24px 20px 50px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.addon-pricing .pricing-header .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #434343;
+  position: relative;
+  padding-bottom: 8px;
+}
+.addon-pricing .pricing-header .sub-title::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2bdbdc;
+  margin: 0 auto;
+}
+.addon-pricing .pricing-header .price {
+  display: block;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-top: 32px;
+  color: #434343;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .addon-pricing .pricing-header .price {
+    font-size: 50px;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .addon-pricing .pricing-header .price {
+    font-size: 50px;
+    margin-top: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .addon-pricing .pricing-header .price {
+    font-size: 64px;
+    margin-top: 32px;
+  }
+}
+.addon-pricing .pricing-header .year {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #6c6c6c;
+  margin-top: 3px;
+}
+.addon-pricing .pricing-list {
+  margin-top: 40px;
+}
+.addon-pricing .pricing-list ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #434343;
+  margin-top: 16px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .addon-pricing .pricing-list ul li {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .addon-pricing .pricing-list ul li {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .addon-pricing .pricing-list ul li {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}
+.addon-pricing .pricing-list ul li i {
+  color: #0067f4;
+  margin-right: 8px;
+}
+.addon-pricing .pricing-btn {
+  margin-top: 42px;
+}
+.addon-pricing .pricing-btn .main-btn {
+  background-color: #0067f4;
+  position: absolute;
+  bottom: 68px;
+  left: 45px;
+  border-radius: 50px;
+  color: #fff;
+  border-color: #0067f4;
+}
+.addon-pricing .pricing-btn .main-btn:hover {
+  background-color: #005ad5;
+  border-color: #005ad5;
+}
+.addon-pricing .buttom-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 101%;
+}
+
+.addon-pricing.pro .pricing-header .sub-title::before {
+  right: auto;
+  left: 0;
+  background-color: #0067f4;
+}
+
+.addon-pricing.pro .pricing-baloon {
+  position: absolute;
+  top: 0;
+  right: -78px;
+  width: 156px;
+}
+
+.addon-pricing.enterprise .pricing-header .sub-title::before {
+  right: 0;
+  left: auto;
+  background-color: #0067f4;
+}
+
+.addon-pricing.enterprise .pricing-flower {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 144px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .addon-pricing.enterprise .pricing-flower {
+    width: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .addon-pricing.enterprise .pricing-flower {
+    width: 110px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .addon-pricing.enterprise .pricing-flower {
+    width: 144px;
+  }
+}
+.addon-pricing.enterprise .pricing-flower img {
+  width: 100%;
+}
 
 /*===========================
     5.CALL TO ACTION css 
 ===========================*/
 .call-to-action {
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   position: relative;
 }
 
@@ -933,7 +1106,7 @@ p {
   position: absolute;
   top: 4px;
   right: 4px;
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -946,7 +1119,7 @@ p {
     right: auto;
     margin-top: 15px;
     background-color: #fff;
-    color: #1B98E0;
+    color: #1b98e0;
   }
 }
 .call-action-content .call-newsletter button:hover {
@@ -1032,7 +1205,7 @@ p.form-message.error {
 }
 .contact-form .single-form .main-btn {
   border-radius: 50px;
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   color: #fff;
 }
 .contact-form .single-form .main-btn:hover {
@@ -1120,16 +1293,16 @@ p.form-message.error {
   color: #434343;
 }
 .footer-five.footer-bark-five {
-  background-color: #1B98E0;
+  background-color: #1b98e0;
 }
 .footer-five.footer-bark-five .social li a {
-  color: #FFF;
+  color: #fff;
 }
 .footer-five.footer-bark-five .footer-support {
   padding-top: 21px;
 }
 .footer-five.footer-bark-five .footer-support span {
-  color: #FFF;
+  color: #fff;
 }
 .footer-five.footer-bark-five .footer-app-store {
   padding-top: 27px;
@@ -1138,7 +1311,7 @@ p.form-message.error {
   color: #6c6c6c;
 }
 .footer-five.footer-bark-five .copyright .text {
-  color: #FFF;
+  color: #fff;
 }
 /* Footer Ends Here */
 .copyright {
@@ -1155,7 +1328,7 @@ p.form-message.error {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  background-color: #1B98E0;
+  background-color: #1b98e0;
   bottom: 10px;
   left: 20px;
   z-index: 999;
@@ -1170,7 +1343,6 @@ p.form-message.error {
   background-color: #045e92;
   color: #fff;
 }
-
 
 /*===========================
        8.FAQ css 
@@ -1240,10 +1412,9 @@ p.form-message.error {
   width: 100%;
 }
 
-.faq-text{
-  color:#434343;
+.faq-text {
+  color: #434343;
 }
-
 
 /*===========================
        8.FAQ ends Here 

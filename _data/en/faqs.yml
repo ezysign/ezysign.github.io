@@ -24,6 +24,12 @@
 
 - id: faq4
   target: collapse4
+  question: What is an Envelope?
+  answer:  "An envelope is an virtual bag that you can send the document to be signed by signee. An envelope allows to send multiple recipients and track the status of each recipients signing process from end to end."
+
+
+- id: faq5
+  target: collapse5
   question: How do electronic signature work with EzySign?
   answer: "<div>
                                         It’s even easier than you may expect. You just open the template and set theSignature Field in one click. Then, simply draw, type or upload an image of your customized autograph within seconds. Moreover, you can outline it directly onto a touchscreen if you are on a tablet or mobile device. You can do much more:
@@ -36,14 +42,14 @@
 
                                     </div>"  
 
-- id: faq5
-  target: collapse5
+- id: faq6
+  target: collapse6
   question: What is Template?
   answer:  "Templates are reusableSignature documents that are best used for commonly used forms such as NDAs, offer letters, or sales agreements. Configure them once, save them as templates, and use them again the next time you need them."
 
 
-- id: faq6
-  target: collapse6
+- id: faq7
+  target: collapse7
   question: How do recepients sign documents with EzySign?
   answer:  "Our streamlined e-signature software makes it extremely simple and convenient for any customer, partner or employee to sign and return documents in a few quick clicks. No registration is required. After someone receives a signing link or email invitation, they can e-sign the template in the quickest way possible: by typing, drawing or capturing theSignature with their camera."
 

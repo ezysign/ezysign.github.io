@@ -49,12 +49,11 @@
 - name: why_item_body_eco_friendly
   value: It’s important to make doing business with your clients, partners, and employees simple and modern. With EzySign intuitive and error-proof guiding signing experience, you give them a faster, more convenient way to interact with you, reinforcing your reputation of being at the cutting edge of technology.
 
-
 - name: call_to_action_title
   value: EzySign will come out very soon
 
 - name: call_to_action_text
-  value: Want to know more about EzySign register to get updates from us! 
+  value: Want to know more about EzySign register to get updates from us!
 
 - name: call_to_action_button_text
   value: STAY UPDATED
@@ -66,7 +65,7 @@
   value: Find out how EzySign can help your business
 
 - name: contact_us_subtitle
-  value: You let us know whenever you want us to update anything or think something can be optimised. 
+  value: You let us know whenever you want us to update anything or think something can be optimised.
 
 - name: contact_us_form_name
   value: Your Name
@@ -88,3 +87,15 @@
 
 - name: lang_switch_text
   value: This page offers in following languages
+
+- name: monthly
+  value: monthly
+
+- name: yearly
+  value: yearly
+
+- name: pricing_slug
+  value: Affordable price and plans
+
+- name: pricing_text
+  value: Eliminates your paper signature with an efficient cost saving solution.Happiness guaranteed.
