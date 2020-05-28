@@ -4,15 +4,17 @@
   price_yearly: 0
   features:
     - description: တရားဝင် Electronic လက်မှတ်
+    - description: Signထိုးသူအစစ်အမှန်ဖြစ်ကြောင်းအတည်ပြုစနစ်
     - description: တဦးသာသုံးနိုင်
     - description: စာအိတ် ၃ ခုပါဝင်
     - description: Google Drive နဲ့ချိတ်ဆက်နိုင်
 - name: Pro
   currency: $
   price_monthly: 11
-  price_yearly: 10
+  price_yearly: 120
   features:
     - description: တရားဝင် Electronic လက်မှတ်
+    - description: Signထိုးသူအစစ်အမှန်ဖြစ်ကြောင်းအတည်ပြုစနစ်
     - description: 5 Users
     - description: စာအိတ် 50 အထိပို့နိုင်(စာအိတ်ထပ်မံဝယ်ယူနိုင်ပါသည်။)
     - description: Google Drive နဲ့ချိတ်ဆက်နိုင်ခြင်း
@@ -22,9 +24,10 @@
 - name: Business
   currency: $
   price_monthly: 25
-  price_yearly: 22
+  price_yearly: 264
   features:
     - description: တရားဝင် Electronic လက်မှတ်
+    - description: Signထိုးသူအစစ်အမှန်ဖြစ်ကြောင်းအတည်ပြုစနစ်
     - description: လူဦးရေအကန့်အသန့်မရှိ
     - description: စာအိတ် 100 အထိပို့နိုင်(စာအိတ်ထပ်မံဝယ်ယူနိုင်ပါသည်။)
     - description: Google Drive နဲ့ချိတ်ဆက်နိုင်ခြင်း
@@ -34,9 +37,10 @@
 - name: Enterprise
   currency: $
   price_monthly: 70
-  price_yearly: 60
+  price_yearly: 720
   features:
     - description: တရားဝင် Electronic လက်မှတ်
+    - description: Signထိုးသူအစစ်အမှန်ဖြစ်ကြောင်းအတည်ပြုစနစ်
     - description: လူဦးရေအကန့်အသန့်မရှိ
     - description: စာအိတ် အကန့်အသန့်မရှိ
     - description: Google Drive နဲ့ချိတ်ဆက်နိုင်
