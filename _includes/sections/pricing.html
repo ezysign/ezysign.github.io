@@ -4,39 +4,50 @@
 {% assign pricing_slug = site.data[page.language].texts | where:"name","pricing_slug" %}
 {% assign pricing_text = site.data[page.language].texts | where:"name","pricing_text" %}
 <style>
-#pricing input { display: none; }
-input + label { display: inline-block }
+    #pricing input {
+        display: none;
+    }
 
-input ~ .tab { display: none }
-#tab1:checked ~ .tab.content1,
-#tab2:checked ~ .tab.content2 { display: block; }
+    input+label {
+        display: inline-block
+    }
 
-input + label {
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background: #FFF;
-  border-radius:1px;
-  display:block;
-  top: 1px;
-  height:auto;
-  text-align:center;
-  padding:1rem;
-  width:8rem;
-  cursor:pointer;
-}
+    input~.tab {
+        display: none
+    }
 
-input:checked + label {
-    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background: #1B98E0;
-  color:white;
-  cursor:pointer;
-}
-input ~ .tab {
-  width:100%;
-}
+    #tab1:checked~.tab.content1,
+    #tab2:checked~.tab.content2 {
+        display: block;
+    }
+
+    input+label {
+        -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background: #FFF;
+        border-radius: 1px;
+        display: block;
+        top: 1px;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        width: 8rem;
+        cursor: pointer;
+    }
+
+    input:checked+label {
+        -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background: #1B98E0;
+        color: white;
+        cursor: pointer;
+    }
+
+    input~.tab {
+        width: 100%;
+    }
 </style>
 <section id="pricing" class="pricing-area">
     <div class="container">
@@ -49,126 +60,317 @@ input ~ .tab {
             </div>
         </div> <!-- row -->
         <div class="row justify-content-center">
-        
-        </div>
-        
-        <div class="row justify-content-center">
-        <input type="radio" name="tabs" id="tab1" checked />
-<label for="tab1">{{yearly.first.value}}</label>
 
-<input type="radio" name="tabs" id="tab2" />
-<label for="tab2">{{monthly.first.value}}</label>
-<div style="clear:both;"></div>
-<div class="tab content1"><div class="row justify-content-center">{%for price_plan in site.data[page.language].pricing_plans%}
-   
-    <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-pricing mt-40">
-                    <div class="pricing-header text-center">
-                        <h5 class="sub-title">{{price_plan.name}}</h5>
-                        <span class="price">{{price_plan.currency}}{{price_plan.price_yearly}}</span>
-                        <p class="year">per year</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <input type="radio" name="tabs" id="tab1" checked />
+            <label for="tab1">{{yearly.first.value}}</label>
+
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2">{{monthly.first.value}}</label>
+            <div style="clear:both;"></div>
+            <div class="tab content1">
+                <div class="row justify-content-center">{%for price_plan in site.data[page.language].pricing_plans%}
+
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="single-pricing mt-40">
+                            <div class="pricing-header text-center">
+                                <h5 class="sub-title">{{price_plan.name}}</h5>
+                                {%if forloop.index != site.data[page.language].pricing_plans.size %}
+                                <span class="price">{{price_plan.currency}}{{price_plan.price_yearly}}</span>
+
+                                <p class="year">per year</p>
+                                {%endif%}
+                                {%if forloop.index == site.data[page.language].pricing_plans.size %}
+                                <span class="pricing-remark">{{price_plan.price_yearly}}</span>
+                                {%endif%}
+
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    {%for feature in price_plan.features %}
+                                    <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                            <div class="pricing-btn text-center">
+                                <a class="main-btn" href="#contact">GET STARTED</a>
+                            </div>
+                            <div class="buttom-shape">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 350 112.35">
+                                    <defs>
+                                        <style>
+                                            .color-1 {
+                                                fill: #2bdbdc;
+                                                isolation: isolate;
+                                            }
+
+                                            .cls-1 {
+                                                opacity: 0.1;
+                                            }
+
+                                            .cls-2 {
+                                                opacity: 0.2;
+                                            }
+
+                                            .cls-3 {
+                                                opacity: 0.4;
+                                            }
+
+                                            .cls-4 {
+                                                opacity: 0.6;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>bottom-part1</title>
+                                    <g id="bottom-part">
+                                        <g id="Group_747" data-name="Group 747">
+                                            <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                transform="translate(0 0)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div> <!-- single pricing -->
                     </div>
-                    <div class="pricing-list">
-                        <ul>
-                        {%for feature in price_plan.features %}
-                            <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
-                        {%endfor%}
-                        </ul>
+
+                    {%endfor%}
+                </div>
+                <!-- Add ons -->
+                <div class="row justify-content-center">{%for price_plan in site.data[page.language].addons%}
+
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="addon-pricing mt-40">
+                            <div class="pricing-header text-center">
+                                <h5 class="sub-title">{{price_plan.name}}</h5>
+
+
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    {%for feature in price_plan.features %}
+                                    <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                            <div class="pricing-btn text-center">
+                                <a class="main-btn" href="#contact">GET STARTED</a>
+                            </div>
+                            <div class="buttom-shape">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 350 112.35">
+                                    <defs>
+                                        <style>
+                                            .color-1 {
+                                                fill: #2bdbdc;
+                                                isolation: isolate;
+                                            }
+
+                                            .cls-1 {
+                                                opacity: 0.1;
+                                            }
+
+                                            .cls-2 {
+                                                opacity: 0.2;
+                                            }
+
+                                            .cls-3 {
+                                                opacity: 0.4;
+                                            }
+
+                                            .cls-4 {
+                                                opacity: 0.6;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>bottom-part1</title>
+                                    <g id="bottom-part">
+                                        <g id="Group_747" data-name="Group 747">
+                                            <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                transform="translate(0 0)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div> <!-- single pricing -->
                     </div>
-                    <div class="pricing-btn text-center">
-                        <a class="main-btn" href="#contact">GET STARTED</a>
-                    </div>
-                    <div class="buttom-shape">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-1{fill:#2bdbdc;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-1" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-1" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-1" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-1" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                    </div>
-                </div> <!-- single pricing -->
+
+                    {%endfor%}</div>
             </div>
-    
-{%endfor%}</div>
-<!-- Add ons -->
-<div class="row justify-content-center">{%for price_plan in site.data[page.language].addons%}
-   
-    <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="addon-pricing mt-40">
-                    <div class="pricing-header text-center">
-                        <h5 class="sub-title">{{price_plan.name}}</h5>
-                        
-                        
+
+            <div class="tab content2">
+                <div class="row justify-content-center">{%for price_plan in site.data[page.language].pricing_plans%}
+
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="single-pricing mt-40">
+                            <div class="pricing-header text-center">
+
+                                <h5 class="sub-title">{{price_plan.name}}</h5>
+                                {%if forloop.index != site.data[page.language].pricing_plans.size %}
+                                <span class="price">{{price_plan.currency}}{{price_plan.price_monthly}}</span>
+
+                                <p class="year">per month</p>
+                                {%endif%}
+                                {%if forloop.index == site.data[page.language].pricing_plans.size %}
+                                <span class="pricing-remark">{{price_plan.price_monthly}}</span>
+                                <p class="year"></p>
+                                {%endif%}
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    {%for feature in price_plan.features %}
+                                    <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                            <div class="pricing-btn text-center">
+                                <a class="main-btn" href="#">GET STARTED</a>
+                            </div>
+                            <div class="buttom-shape">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 350 112.35">
+                                    <defs>
+                                        <style>
+                                            .color-1 {
+                                                fill: #2bdbdc;
+                                                isolation: isolate;
+                                            }
+
+                                            .cls-1 {
+                                                opacity: 0.1;
+                                            }
+
+                                            .cls-2 {
+                                                opacity: 0.2;
+                                            }
+
+                                            .cls-3 {
+                                                opacity: 0.4;
+                                            }
+
+                                            .cls-4 {
+                                                opacity: 0.6;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>bottom-part1</title>
+                                    <g id="bottom-part">
+                                        <g id="Group_747" data-name="Group 747">
+                                            <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                transform="translate(0 0)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div> <!-- single pricing -->
                     </div>
-                    <div class="pricing-list">
-                        <ul>
-                        {%for feature in price_plan.features %}
-                            <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
-                        {%endfor%}
-                        </ul>
+
+                    {%endfor%}</div>
+                <!-- Add ons -->
+                <div class="row justify-content-center">{%for price_plan in site.data[page.language].addons%}
+
+                    <div class="col-lg-3 col-md-6 col-sm-8">
+                        <div class="addon-pricing mt-40">
+                            <div class="pricing-header text-center">
+                                <h5 class="sub-title">{{price_plan.name}}</h5>
+
+
+                            </div>
+                            <div class="pricing-list">
+                                <ul>
+                                    {%for feature in price_plan.features %}
+                                    <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
+                                    {%endfor%}
+                                </ul>
+                            </div>
+                            <div class="pricing-btn text-center">
+                                <a class="main-btn" href="#">GET STARTED</a>
+                            </div>
+                            <div class="buttom-shape">
+                                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 350 112.35">
+                                    <defs>
+                                        <style>
+                                            .color-1 {
+                                                fill: #2bdbdc;
+                                                isolation: isolate;
+                                            }
+
+                                            .cls-1 {
+                                                opacity: 0.1;
+                                            }
+
+                                            .cls-2 {
+                                                opacity: 0.2;
+                                            }
+
+                                            .cls-3 {
+                                                opacity: 0.4;
+                                            }
+
+                                            .cls-4 {
+                                                opacity: 0.6;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>bottom-part1</title>
+                                    <g id="bottom-part">
+                                        <g id="Group_747" data-name="Group 747">
+                                            <path id="Path_294" data-name="Path 294" class="cls-1 color-1"
+                                                d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_297" data-name="Path 297" class="cls-2 color-1"
+                                                d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_296" data-name="Path 296" class="cls-3 color-1"
+                                                d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z"
+                                                transform="translate(0 0)" />
+                                            <path id="Path_295" data-name="Path 295" class="cls-4 color-1"
+                                                d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z"
+                                                transform="translate(0 0)" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div> <!-- single pricing -->
                     </div>
-                    <div class="pricing-btn text-center">
-                        <a class="main-btn" href="#contact">GET STARTED</a>
-                    </div>
-                    <div class="buttom-shape">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-1{fill:#2bdbdc;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-1" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-1" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-1" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-1" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                    </div>
-                </div> <!-- single pricing -->
+
+                    {%endfor%}</div>
             </div>
-    
-{%endfor%}</div></div>
-        
-           <div class="tab content2"><div class="row justify-content-center">{%for price_plan in site.data[page.language].pricing_plans%}
-   
-    <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="single-pricing mt-40">
-                    <div class="pricing-header text-center">
-                        <h5 class="sub-title">{{price_plan.name}}</h5>
-                        <span class="price">{{price_plan.currency}}{{price_plan.price_monthly}}</span>
-                         <p class="year">per month</p>
-                    </div>
-                    <div class="pricing-list">
-                        <ul>
-                        {%for feature in price_plan.features %}
-                            <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
-                        {%endfor%}
-                        </ul>
-                    </div>
-                    <div class="pricing-btn text-center">
-                        <a class="main-btn" href="#">GET STARTED</a>
-                    </div>
-                    <div class="buttom-shape">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-1{fill:#2bdbdc;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-1" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-1" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-1" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-1" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                    </div>
-                </div> <!-- single pricing -->
-            </div>
-    
-{%endfor%}</div>
-<!-- Add ons -->
-<div class="row justify-content-center">{%for price_plan in site.data[page.language].addons%}
-   
-    <div class="col-lg-3 col-md-6 col-sm-8">
-                <div class="addon-pricing mt-40">
-                     <div class="pricing-header text-center">
-                        <h5 class="sub-title">{{price_plan.name}}</h5>
-                        
-                        
-                    </div>
-                    <div class="pricing-list">
-                        <ul>
-                        {%for feature in price_plan.features %}
-                            <li><i class="lni-check-mark-circle"></i>{{feature.description}}</li>
-                        {%endfor%}
-                        </ul>
-                    </div>
-                    <div class="pricing-btn text-center">
-                        <a class="main-btn" href="#">GET STARTED</a>
-                    </div>
-                    <div class="buttom-shape">
-                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 112.35"><defs><style>.color-1{fill:#2bdbdc;isolation:isolate;}.cls-1{opacity:0.1;}.cls-2{opacity:0.2;}.cls-3{opacity:0.4;}.cls-4{opacity:0.6;}</style></defs><title>bottom-part1</title><g id="bottom-part"><g id="Group_747" data-name="Group 747"><path id="Path_294" data-name="Path 294" class="cls-1 color-1" d="M0,24.21c120-55.74,214.32,2.57,267,0S349.18,7.4,349.18,7.4V82.35H0Z" transform="translate(0 0)"/><path id="Path_297" data-name="Path 297" class="cls-2 color-1" d="M350,34.21c-120-55.74-214.32,2.57-267,0S.82,17.4.82,17.4V92.35H350Z" transform="translate(0 0)"/><path id="Path_296" data-name="Path 296" class="cls-3 color-1" d="M0,44.21c120-55.74,214.32,2.57,267,0S349.18,27.4,349.18,27.4v74.95H0Z" transform="translate(0 0)"/><path id="Path_295" data-name="Path 295" class="cls-4 color-1" d="M349.17,54.21c-120-55.74-214.32,2.57-267,0S0,37.4,0,37.4v74.95H349.17Z" transform="translate(0 0)"/></g></g></svg>
-                    </div>
-                </div> <!-- single pricing -->
-            </div>
-    
-{%endfor%}</div>
-</div>
-            
-            
+
+
         </div> <!-- row -->
     </div> <!-- conteiner -->
 </section>

@@ -35,9 +35,9 @@
     - description: အလိုအလျောက်အကြောင်းကြားခြင်း
 
 - name: Enterprise
-  currency: $
-  price_monthly: 70
-  price_yearly: 720
+  currency:
+  price_monthly: ဆွေးနွေးကြမယ်
+  price_yearly: ဆွေးနွေးကြမယ်
   features:
     - description: တရားဝင် Electronic လက်မှတ်
     - description: Signထိုးသူအစစ်အမှန်ဖြစ်ကြောင်းအတည်ပြုစနစ်

@@ -643,6 +643,14 @@ p {
 /*===========================
       4.PRICING css 
 ===========================*/
+.pricing-remark {
+  display: block;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 80px;
+  margin-top: 32px;
+  color: #434343;
+}
 .pricing-area {
   padding-top: 120px;
   padding-bottom: 120px;
