@@ -80,7 +80,7 @@
   value: Phone
 
 - name: contact_us_form_organization
-  value: Organization name if no organization please fill NA
+  value: Organization/Company name (if no, please fill N/A)
 
 - name: contact_us_form_message
   value: Your Message
