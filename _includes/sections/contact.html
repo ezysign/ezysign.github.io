@@ -2,9 +2,11 @@
 {% assign contact_us_title = site.data[page.language].texts | where:"name","contact_us_title" %}
 {% assign description = site.data[page.language].texts | where:"name","contact_us_subtitle" %}
 {% assign contact_us_form_name = site.data[page.language].texts | where:"name","contact_us_form_name" %}
+{% assign contact_us_form_name = site.data[page.language].texts | where:"name","contact_us_form_name" %}
 {% assign contact_us_form_email = site.data[page.language].texts | where:"name","contact_us_form_email" %}
 {% assign contact_us_form_subject = site.data[page.language].texts | where:"name","contact_us_form_subject" %}
 {% assign contact_us_form_phone = site.data[page.language].texts | where:"name","contact_us_form_phone" %}
+{% assign contact_us_form_organization = site.data[page.language].texts | where:"name","contact_us_form_organization" %}
 {% assign contact_us_form_message = site.data[page.language].texts | where:"name","contact_us_form_message" %}
 {% assign contact_us_form_button = site.data[page.language].texts | where:"name","contact_us_form_button" %}
 
@@ -48,6 +50,27 @@
                                 <div class="single-form form-group">
                                     <input type="text" name="phone" placeholder="{{contact_us_form_phone.first.value}}" data-error="Phone is required."
                                         required="required">
+                                    <div class="help-block with-errors"></div>
+                                </div> <!-- single form -->
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-form form-group">
+                                    <input type="text" name="companyname" placeholder="{{contact_us_form_organization.first.value}}" data-error="Organization is required."
+                                        required="required">
+                                    <div class="help-block with-errors"></div>
+                                </div> <!-- single form -->
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="single-form form-group">
+                                    <select class="form-control" name="organization_size" required>
+                                        <option value="0">Select your organization size</option>
+                                        <option selected value="1-5">1 to 5 members</option>
+                                        <option value="5-10">5 to 20 members</option>
+                                        <option value="20-50">20 to 50 members</option>
+                                        <option value="50-100">50 to 100 members</option>
+                                        <option value="100-above">100 and above</option>
+                                      </select>
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- single form -->
                             </div>
