@@ -10,27 +10,28 @@
     - description: Google Drive Integration
 - name: Pro
   currency: $
-  price_monthly: 11
-  price_yearly: 120
+  price_monthly: 20
+  price_yearly: 216
   features:
     - description: Legally Binded eSignature
     - description: Signer authentication
     - description: 5 Users
-    - description: 20 Envelopes (Add on applies)
+    - description: 20 Envelopes (initial Add-ons)
     - description: Google Drive Integration
     - description: Mobile Login
     - description: Reminder/Notification alert
 
 - name: Business
   currency: $
-  price_monthly: 25
-  price_yearly: 264
+  price_monthly: 50
+  price_yearly: 576
   features:
     - description: Legally Binded eSignature
     - description: Signer authentication
     - description: Unlimited Users
-    - description: 100 Envelopes (Add on applies)
+    - description: 100 Envelopes (initial Add-ons)
     - description: Google Drive Integration
+    - description: Templates Included
     - description: Mobile Login
     - description: Reminder/Notification alert
 
