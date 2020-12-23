@@ -1,11 +1,11 @@
 - name: Pro(Addons)
   currency: $
   features:
-    - description: 10$ for 50 envelopes
-    - description: 18$ for 100 envelopes
+    - description: 14$ for 50 envelopes
+    
 
 - name: Business(Addons)
   currency: $
   features:
-    - description: 8$ for 50 envelopes
-    - description: 14$ for 100 envelopes
+    - description: 12$ for 50 envelopes
+    

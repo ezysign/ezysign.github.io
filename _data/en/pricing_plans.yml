@@ -20,6 +20,7 @@
     - description: Google Drive Integration
     - description: Mobile Login
     - description: Reminder/Notification alert
+    - description: Signer Verification
 
 - name: Business
   currency: $
@@ -34,6 +35,7 @@
     - description: Templates Included
     - description: Mobile Login
     - description: Reminder/Notification alert
+    - description: Signer Verification
 
 - name: Enterprise
   currency:
@@ -47,4 +49,5 @@
     - description: Google Drive Integration
     - description: Mobile Login
     - description: Reminder/Notification alert
+    - description: Signer Verification
     - description: Bulk Send
